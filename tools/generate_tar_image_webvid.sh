@@ -1,0 +1,13 @@
+python generate_tar_image.py \
+    --csv_file  \
+    --output_dir  \
+    --query_id_name "target" \
+    --col_name "tar_desc" \
+    --model_path  \
+    --width 1280 \
+    --height 720 \
+    --num_inference_steps 4 \
+    --cfg_scale 5.0 \
+    --seed 42 \
+    --use_quantization \
+    --skip_existing

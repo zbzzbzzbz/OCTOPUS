@@ -1,0 +1,52 @@
+[
+    {
+        "exp-name": "WebVidCoVR Experiment",
+        "device": 0,
+        "preload": [
+            "img_features",
+            "captions",
+            "ref_img_features",
+            "gen_img_features"
+        ],
+        "clip": "ViT-L/14",
+        "clip_choices": [
+            "ViT-Base/32",
+            "ViT-B/32",
+            "ViT-B/16",
+            "ViT-L/14",
+            "ViT-bigG-14",
+            "ViT-B-32",
+            "ViT-B-16",
+            "ViT-L-14",
+            "ViT-H-14",
+            "ViT-g-14"
+        ],
+        "dataset": "webvidcovr",
+        "dataset_choices": [
+            "cirr",
+            "circo",
+            "fashioniq_dress",
+            "fashioniq_toptee",
+            "fashioniq_shirt",
+            "webvidcovr"
+        ],
+        "split": "test",
+        "split_choices": [
+            "val",
+            "test"
+        ],
+        "dataset_path": "../datasets/WebVid_CoVR",
+        "annotation": "../datasets/annotation/webvid8m-covr_test.csv",
+        "vid_dirs": "Your vid_dirs path",
+        "gen_tar_dirs": "Your gen_tar_dirs path",
+        "vid_query_method": "middle",
+        "vid_query_method_choices": [
+            "middle",
+            "random",
+            "sample"
+        ],
+        "vid_frames": 1,
+        "preload_image_captions_file": "preload_image_captions.pkl",
+        "task": "webvidcovr_test"
+    }
+]
